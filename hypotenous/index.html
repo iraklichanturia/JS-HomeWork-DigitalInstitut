@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //case 3 homework 2
+      //Create an algorithm that calculates the hypotenuse of a right triangle if the user enters the values ​​of sides a and b
+      //ask the user to input values of a and b sides
+      var sideA = Number(prompt("Enter the value of side A"));
+      var sideB = Number(prompt("Enter the value of side B"));
+      //check if the inputs are valid numbers
+      if (isNaN(sideA) || isNaN(sideB)) {
+        alert("please enter valid numerical values for sideA and sideB");
+      } else {
+        if (sideA || sideB <= 0) {
+          alert("sides must be greater than zero");
+        } else {
+          //calculate area using formula
+          var area = Math.sqrt(sideA ** 2 + sideB ** 2);
+          console.log(area);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //case2 exercise second(2)
+      //create variables
+      var Name;
+      var Surname;
+      var Age;
+      var Email;
+      var Gender;
+      //ask to user input the meanings
+      Name = prompt("What is your name?"); //user inputs his/her name.
+      Surname = prompt("What is your surname?"); //user inputs his/her surname.
+      Age = parseInt(prompt("How old are you?")); //user inputs his/her age.
+      Email = prompt("Please enter your email address"); //user enters her/his email address.
+      Gender = prompt("Are you a male or female?"); //user selects gender.
+      //print text in document
+      document.write(
+        "My Name is " +
+          Name +
+          " My Surname is " +
+          Surname +
+          " I am " +
+          Age +
+          " years old. " +
+          " You can contact me at: " +
+          Email +
+          " I am a " +
+          Gender
+      );
+    </script>
+  </body>
+</html>

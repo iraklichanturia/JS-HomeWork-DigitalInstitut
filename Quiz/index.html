@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //case 2 homework 2
+      var testCase = confirm("Start the quiz?");
+      if (testCase) {
+        var counter = 0;
+        var questionFirst = prompt(
+          "What is the capital of georgia? a)tbilisi b)kutaisi C)abasha d)batumi"
+        );
+        if (questionFirst === "a") {
+          counter++;
+        }
+        var questionSecond = prompt(
+          "Which planet is known as the Red Planet? a) Earth b) Mars c) Venus d) Jupiter"
+        );
+        if (questionSecond === "b") {
+          counter++;
+        }
+        var questionThird = prompt(
+          "Inside which HTML element do we put the JavaScript? a)<scripting> b)<js> c)<javascript> d)<script>"
+        );
+        if (questionThird === "d") {
+          counter++;
+        }
+        var questionFourth = prompt(
+          "How to write an IF statement in JavaScript? a)if i === 5 then b)if i == 5 c)if (i ==5) d)if i = 5 then"
+        );
+        if (questionFourth === "c") {
+          counter++;
+        }
+        console.log("count = ", counter);
+      } else {
+        console.log("error");
+      }
+    </script>
+  </body>
+</html>

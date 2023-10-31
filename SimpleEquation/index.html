@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //case 3 homework 1
+      // Ask the user to input the values of Y and Z
+      var Y = Number(prompt("Enter the value of Y:"));
+      var Z = Number(prompt("Enter the value of Z:"));
+      // Check if the inputs are valid numbers
+      if (isNaN(Y) || isNaN(Z)) {
+        alert("Please enter valid numeric values for Y and Z.");
+      } else {
+        // Calculate X using the equation
+        var X = (3 * Y - Z) / 2;
+        console.log("The value of X is: " + X);
+      }
+    </script>
+  </body>
+</html>

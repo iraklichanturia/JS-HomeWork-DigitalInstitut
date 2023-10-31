@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // case 3 homework 3
+      // create an algorithm that calculates triangle perimeter in case  if user inputs all sides values
+      var sideA = Number(prompt("Enter the value of side A"));
+      var sideB = Number(prompt("Enter the value of side B"));
+      var sideC = Number(prompt("Enter the value of side C"));
+
+      if (isNaN(sideA) || isNaN(sideB) || isNaN(sideC)) {
+        alert("Please enter valid numerical values");
+      } else if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
+        alert("Sides should be greater than zero");
+      } else {
+        var p = sideA + sideB + sideC;
+        console.log("The perimeter is: " + p);
+      }
+    </script>
+  </body>
+</html>
